@@ -771,6 +771,7 @@
     padding: 50px 100px;
     height: auto;
     min-height: auto;
+    overflow: hidden;
   }
 
   .nature__title {
