@@ -26,6 +26,7 @@
     display: block;
     position: absolute;
     left: 90%;
+    top: 50%;
     transform: translateX(-50%);
   }
 
@@ -45,6 +46,8 @@
 
   .menu-icon {
     left: 50%;
+    align-items: center;
+    justify-content: center;
     transform: translateX(-50%);
   }
 
@@ -62,7 +65,7 @@
   html,
   body {
     overflow-x: hidden;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .home {
@@ -250,23 +253,30 @@
   }
 }
 
-@media (max-width: 476px) {
+@media (max-width: 426px) {
+
   .home__title {
     font-size: 3rem;
   }
+  .home__desc{
+    font-size: 1rem;
+  }
+  .home__image{
+    width: 300px;
+  }
 
-  .search-box {
+  /* .search-box {
     padding: 10px;
-  }
+  } */
 
-  .search-btn {
+  /* .search-btn {
     width: 100%;
-  }
+  } */
 
-  .home__image-birds {
+  /* .home__image-birds {
     max-width: 100px;
     top: 50px;
-  }
+  } */
 }
 
 /* ====================
@@ -425,21 +435,22 @@
   }
 }
 
-@media (max-width: 476px) {
+@media (max-width: 426px) {
   .about {
-    padding: 20px 50px;
+    /* padding: 20px 50px; */
   }
 
   .about__title {
-    font-size: 1.5rem;
+    font-size: 0.5rem;
   }
 
-  .about__image-5 {
+  /* .about__image-5 {
     width: 100px;
     top: 100px;
-  }
+  } */
 
   .about__image-4,
+  .about__image-3,
   .about__image-5,
   .tagline {
     display: none;
@@ -593,11 +604,16 @@
   }
 
   .memories__titile {
-    font-size: calc(var(--h2-font-size) * 0.8);
+    /* font-size: calc(var(--h2-font-size) * 0.8); */
+    font-size: 2rem !important;
   }
 
   .memories__btn {
-    width: 100%;
+    /* width: 100%; */
+  }
+
+  .memories__image-1,.memories__image-6, .memories__image-7{
+    display:none;
   }
 }
 
@@ -692,7 +708,8 @@
   }
 
   .features__title {
-    font-size: var(--h4-font-size);
+    /* font-size: var(--h4-font-size); */
+    font-size: 2rem !important;
   }
 
   .features__card-title {
@@ -701,6 +718,10 @@
 
   .features__card-desc {
     font-size: var(--extra-small-font-size);
+  }
+
+  .features__card{
+    /* display:none; */
   }
 }
 
@@ -850,11 +871,15 @@
   }
 
   .nature__title {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
 
   .nature__card {
     width: 100%;
+  }
+
+  .nature__card-image {
+    display: none;
   }
 
   .nature__image-1,
@@ -947,11 +972,11 @@
   }
 
   .destinatio__title {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
   }
 
   .destination__desc {
-    font-size: 14px;
+    font-size: 0.5rem  !important;
   }
 
   .destinatio__btn {
@@ -1106,6 +1131,9 @@
     height: 80px;
   }
 
+  .testimonial__image-1,.testimonial__image-2{
+    display: none;
+  }
   .testimonial__card-title{
     font-size: var(--large-font-size); 
   }
