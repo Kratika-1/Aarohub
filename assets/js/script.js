@@ -12,6 +12,22 @@ closeIcon.addEventListener("click", () => {
     sidebar.classList.remove("active");
 });
 
+// Close sidebar when a sidebar link is clicked
+const sidebarLinks = document.querySelectorAll('.sidebar__link');
+sidebarLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        sidebar.classList.remove('active');
+        const targetId = link.getAttribute('href').substring(1);
+        setTimeout(() => {
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 300); // Delay to match sidebar transition
+    });
+});
+
 /*=============== DropDown MENU ===============*/
 
 document.addEventListener("DOMContentLoaded", function () {

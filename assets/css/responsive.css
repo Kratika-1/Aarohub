@@ -817,6 +817,7 @@
     padding: 40px 15px;
     height: auto;
     min-height: auto;
+    overflow: hidden;
   }
 
   .nature__title {
@@ -831,6 +832,7 @@
 @media (max-width: 992px) {
   .nature {
     padding: 30px 10px;
+    overflow: hidden;
   }
 
   .nature__cards {
