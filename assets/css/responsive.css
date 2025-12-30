@@ -742,8 +742,9 @@
   .nature {
     padding: 60px 120px;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
+    height: auto;
   }
 
   .nature__image-1 {
