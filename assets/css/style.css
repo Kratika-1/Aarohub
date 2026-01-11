@@ -175,7 +175,7 @@
   color: var(--text-color);
 }
 
-.sidebar{
+/* .sidebar{
   position: fixed;
   top: 0;
   left: -300px;
@@ -188,7 +188,28 @@
   overflow-y: auto;
   overflow-x: visible;
   z-index: 999;
+} */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+
+  height: 100dvh;   /* 🔥 dynamic viewport height */
+  max-height: 100dvh;
+
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  transition: left 0.3s ease;
+  padding: 20px;
+
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  z-index: 999;
 }
+
 
 .sidebar.active{
   left: 0;

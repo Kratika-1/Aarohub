@@ -879,8 +879,11 @@
 
 @media (max-width: 476px) {
   .nature {
-    padding: 50px 100px;
-    height: 40vh;
+    /* padding: 50px 100px;
+    height: 40vh; */
+    padding: 60px 20px;   /* mobile-friendly spacing */
+    height: auto;        /* 🔥 let content decide height */
+    min-height: 100dvh;
   }
 
   .nature__title {
